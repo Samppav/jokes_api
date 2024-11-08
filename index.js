@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.send('Try /jokes/random, /jokes/ten or /jokes/random/any-number');
 });
 
-app.get('jokes/count', (req, res) => {
+app.get('/jokes/count', (req, res) => {
   res.json({"jokes":count});
 })
 
